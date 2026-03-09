@@ -1,5 +1,5 @@
 /* ============================================================
-   THE COSTUME LOOP — Custom Landing Page Styles
+   THE COSTUME LOOP â Custom Landing Page Styles
    For Sharetribe Web Template
 
    Add this CSS to your web-template's global styles, e.g.:
@@ -26,7 +26,7 @@
 
 
 /* ==========================================================
-   0. HERO — Burgundy gradient, Playfair heading, gold search
+   0. HERO â Burgundy gradient, Playfair heading, gold search
    ========================================================== */
 
 /* Burgundy gradient background */
@@ -55,7 +55,7 @@
   pointer-events: none;
 }
 
-/* Hero title — Playfair Display serif */
+/* Hero title â Playfair Display serif */
 #hero h1 {
   font-family: 'Playfair Display', serif !important;
   font-size: 48px !important;
@@ -93,7 +93,7 @@
   font-size: 15px !important;
 }
 
-/* Search button — gold */
+/* Search button â gold */
 #hero button[type="submit"],
 #hero [class*="Button_primaryButtonRoot"] {
   background: var(--tcl-gold) !important;
@@ -144,7 +144,7 @@
   vertical-align: middle !important;
 }
 
-/* Primary CTA — "Browse Costumes" (Sharetribe's native CTA link) */
+/* Primary CTA â "Browse Costumes" (Sharetribe's native CTA link) */
 #hero a[class*="ctaButton"],
 #hero [class*="callToAction"] a {
   background: var(--tcl-gold) !important;
@@ -158,7 +158,7 @@
   border-color: #d49730 !important;
 }
 
-/* Secondary CTA — "Sell a Costume" (injected via JS) */
+/* Secondary CTA â "Sell a Costume" (injected via JS) */
 .tcl-hero-secondary-cta {
   background: transparent !important;
   color: white !important;
@@ -173,7 +173,7 @@
 
 
 /* ==========================================================
-   1. VALUE BAR — Cream background, 3 centered columns
+   1. VALUE BAR â Cream background, 3 centered columns
    ========================================================== */
 
 #value-bar {
@@ -223,7 +223,7 @@
 
 
 /* ==========================================================
-   2. HOW IT WORKS — Warm white background, numbered cards
+   2. HOW IT WORKS â Warm white background, numbered cards
    ========================================================== */
 
 #how-it-works-steps {
@@ -231,7 +231,7 @@
   padding: 32px 0 !important;
 }
 
-/* Section title — Playfair Display */
+/* Section title â Playfair Display */
 #how-it-works-steps h2 {
   font-family: 'Playfair Display', serif !important;
   font-size: 34px !important;
@@ -302,7 +302,7 @@
 
 
 /* ==========================================================
-   3. BROWSE BY GENRE — Category cards with cream background
+   3. BROWSE BY GENRE â Category cards with cream background
    ========================================================== */
 
 #browse-by-genre {
@@ -372,7 +372,7 @@
 
 
 /* ==========================================================
-   4. CTA BANNER — Burgundy gradient background
+   4. CTA BANNER â Burgundy gradient background
    ========================================================== */
 
 #cta-banner {
@@ -427,7 +427,7 @@
 
 
 /* ==========================================================
-   5. SOCIAL PROOF — Trust signals section
+   5. SOCIAL PROOF â Trust signals section
    ========================================================== */
 
 #social-proof {
@@ -479,7 +479,7 @@
 
 
 /* ==========================================================
-   6. FOR STUDIOS — White background, gold top border, feature cards
+   6. FOR STUDIOS â White background, gold top border, feature cards
    ========================================================== */
 
 #for-studios {
@@ -594,11 +594,11 @@
 
 
 /* ==========================================================
-   8. FOR STUDIOS PAGE — /p/for-studios
+   8. FOR STUDIOS PAGE â /p/for-studios
    Sections: fs-hero, fs-benefits-1, fs-benefits-2, fs-cta
    ========================================================== */
 
-/* --- 8a. For Studios Hero — Burgundy gradient --- */
+/* --- 8a. For Studios Hero â Burgundy gradient --- */
 #fs-hero {
     background: linear-gradient(135deg, var(--tcl-burgundy-deep) 0%, var(--tcl-burgundy) 60%, var(--tcl-burgundy-light) 100%) !important;
     padding: 80px 0 !important;
@@ -648,7 +648,7 @@
 }
 
 
-/* --- 8b. For Studios Benefits Row 1 — Cream cards --- */
+/* --- 8b. For Studios Benefits Row 1 â Cream cards --- */
 #fs-benefits-1 {
     background: #f9f7f5 !important;
     padding: 60px 0 !important;
@@ -680,21 +680,21 @@
 
 /* Emoji icons via CSS ::before using block titles */
 #fs-benefits-1 [class*="BlockContainer_root"]:nth-child(1) [class*="BlockDefault_text"]::before {
-    content: '🏪';
+    content: 'ðª';
     display: block;
     font-size: 36px;
     margin-bottom: 12px;
 }
 
 #fs-benefits-1 [class*="BlockContainer_root"]:nth-child(2) [class*="BlockDefault_text"]::before {
-    content: '💰';
+    content: 'ð°';
     display: block;
     font-size: 36px;
     margin-bottom: 12px;
 }
 
 #fs-benefits-1 [class*="BlockContainer_root"]:nth-child(3) [class*="BlockDefault_text"]::before {
-    content: '🤝';
+    content: 'ð¤';
     display: block;
     font-size: 36px;
     margin-bottom: 12px;
@@ -715,7 +715,7 @@
 }
 
 
-/* --- 8c. For Studios Benefits Row 2 — Cream cards --- */
+/* --- 8c. For Studios Benefits Row 2 â Cream cards --- */
 #fs-benefits-2 {
     background: #f9f7f5 !important;
     padding: 20px 0 60px !important;
@@ -748,21 +748,21 @@
 
 /* Emoji icons for Row 2 */
 #fs-benefits-2 [class*="BlockContainer_root"]:nth-child(1) [class*="BlockDefault_text"]::before {
-    content: '🌿';
+    content: 'ð¿';
     display: block;
     font-size: 36px;
     margin-bottom: 12px;
 }
 
 #fs-benefits-2 [class*="BlockContainer_root"]:nth-child(2) [class*="BlockDefault_text"]::before {
-    content: '✅';
+    content: 'â';
     display: block;
     font-size: 36px;
     margin-bottom: 12px;
 }
 
 #fs-benefits-2 [class*="BlockContainer_root"]:nth-child(3) [class*="BlockDefault_text"]::before {
-    content: '📣';
+    content: 'ð£';
     display: block;
     font-size: 36px;
     margin-bottom: 12px;
@@ -783,7 +783,7 @@
 }
 
 
-/* --- 8d. For Studios CTA Banner — Burgundy gradient --- */
+/* --- 8d. For Studios CTA Banner â Burgundy gradient --- */
 #fs-cta {
     background: linear-gradient(135deg, var(--tcl-burgundy-deep) 0%, var(--tcl-burgundy) 100%) !important;
     padding: 80px 0 !important;
@@ -817,7 +817,7 @@
     line-height: 1.6 !important;
 }
 
-/* CTA button — gold accent */
+/* CTA button â gold accent */
 #fs-cta a[class*="ctaButton"],
 #fs-cta [class*="callToAction"] a,
 #fs-cta a[class*="Button"] {
@@ -836,4 +836,150 @@
 #fs-cta [class*="callToAction"] a:hover,
 #fs-cta a[class*="Button"]:hover {
     background: #d49730 !important;
+}
+
+
+
+/* ===========================================================
+   ABOUT PAGE STYLES
+   Sections: #about-hero (Our Story), #about-cards (Pillars)
+   =========================================================== */
+
+/* ── About Hero — "Our Story" ── */
+#about-hero {
+  background: linear-gradient(135deg, var(--tcl-burgundy-deep) 0%, var(--tcl-burgundy) 60%, var(--tcl-burgundy-light) 100%) !important;
+  padding: 80px 40px !important;
+  text-align: center !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+#about-hero::after {
+  content: '' !important;
+  position: absolute !important;
+  right: -40px !important;
+  top: -40px !important;
+  width: 300px !important;
+  height: 300px !important;
+  border-radius: 50% !important;
+  background: rgba(255, 255, 255, 0.04) !important;
+  pointer-events: none !important;
+}
+
+#about-hero h1,
+#about-hero h2,
+#about-hero [class*="title"] {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 44px !important;
+  font-weight: 700 !important;
+  color: #fff !important;
+  margin-bottom: 20px !important;
+}
+
+#about-hero [class*="Ingress_ingress"],
+#about-hero [class*="description"],
+#about-hero p {
+  font-size: 18px !important;
+  line-height: 1.7 !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+  max-width: 660px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* ── About Hero — Block/Article content area ── */
+#about-hero [class*="Block_root"],
+#about-hero [class*="BlockContainer"],
+#about-hero article {
+  max-width: 800px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-align: left !important;
+}
+
+#about-hero [class*="Block_root"] h3,
+#about-hero article h3 {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 28px !important;
+  font-weight: 700 !important;
+  color: #fff !important;
+  margin-top: 40px !important;
+  margin-bottom: 16px !important;
+}
+
+#about-hero [class*="Block_root"] p,
+#about-hero article p {
+  font-size: 16px !important;
+  line-height: 1.7 !important;
+  color: rgba(255, 255, 255, 0.88) !important;
+  max-width: none !important;
+  text-align: left !important;
+}
+
+/* ── About Cards — Four Pillars ── */
+#about-cards {
+  padding: 70px 40px !important;
+  background: var(--tcl-warm-white) !important;
+}
+
+#about-cards [class*="title"],
+#about-cards h2 {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 32px !important;
+  font-weight: 700 !important;
+  color: var(--tcl-burgundy-deep) !important;
+  text-align: center !important;
+  margin-bottom: 40px !important;
+}
+
+/* Cards grid */
+#about-cards [class*="Columns_baseColumn"],
+#about-cards [class*="column"] {
+  background: #fff !important;
+  border-radius: 12px !important;
+  padding: 32px 24px !important;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06) !important;
+  text-align: center !important;
+  transition: all 0.2s ease !important;
+}
+
+#about-cards [class*="Columns_baseColumn"]:hover,
+#about-cards [class*="column"]:hover {
+  box-shadow: 0 4px 20px rgba(74, 14, 46, 0.1) !important;
+  transform: translateY(-2px) !important;
+}
+
+/* Card titles */
+#about-cards [class*="Columns_baseColumn"] h3,
+#about-cards [class*="column"] h3 {
+  font-family: 'Outfit', sans-serif !important;
+  font-size: 19px !important;
+  font-weight: 700 !important;
+  color: var(--tcl-burgundy-deep) !important;
+  margin-bottom: 12px !important;
+}
+
+/* Card descriptions */
+#about-cards [class*="Columns_baseColumn"] p,
+#about-cards [class*="column"] p {
+  font-size: 14px !important;
+  color: #555 !important;
+  line-height: 1.6 !important;
+}
+
+/* ── About page responsive ── */
+@media (max-width: 768px) {
+  #about-hero h1,
+  #about-hero h2,
+  #about-hero [class*="title"] {
+    font-size: 32px !important;
+  }
+
+  #about-hero {
+    padding: 50px 24px !important;
+  }
+
+  #about-cards {
+    padding: 50px 24px !important;
+  }
 }
