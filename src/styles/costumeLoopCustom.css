@@ -1,0 +1,593 @@
+/* ============================================================
+   THE COSTUME LOOP — Custom Landing Page Styles
+   For Sharetribe Web Template
+
+   Add this CSS to your web-template's global styles, e.g.:
+     src/styles/costumLoopCustom.css
+   Then import in src/app.js:
+     import './styles/costumeLoopCustom.css';
+   ============================================================ */
+
+/* ===== FONTS ===== */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600;700&display=swap');
+
+/* ===== CSS VARIABLES ===== */
+:root {
+  --tcl-burgundy-deep: #4A0E2E;
+  --tcl-burgundy: #800020;
+  --tcl-burgundy-light: #9B2847;
+  --tcl-cream: #F2E8D5;
+  --tcl-cream-dark: #E8DCC8;
+  --tcl-gold: #E8A838;
+  --tcl-warm-white: #FAF7F2;
+  --tcl-text: #2D2D2D;
+  --tcl-text-light: #6B6B6B;
+}
+
+
+/* ==========================================================
+   0. HERO — Burgundy gradient, Playfair heading, gold search
+   ========================================================== */
+
+/* Burgundy gradient background */
+#hero {
+  background: linear-gradient(135deg, var(--tcl-burgundy-deep) 0%, var(--tcl-burgundy) 60%, var(--tcl-burgundy-light) 100%) !important;
+  padding: 70px 0 !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+/* Override Sharetribe's custom appearance background overlay */
+#hero [class*="CustomAppearance_backgroundImageWrapper"] {
+  background: transparent !important;
+}
+
+/* Decorative circle (top-right, matches mockup) */
+#hero::after {
+  content: '';
+  position: absolute;
+  right: -40px;
+  top: -40px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.04);
+  pointer-events: none;
+}
+
+/* Hero title — Playfair Display serif */
+#hero h1 {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 48px !important;
+  font-weight: 700 !important;
+  line-height: 1.15 !important;
+  color: white !important;
+  margin-bottom: 16px !important;
+}
+
+/* Hero description */
+#hero [class*="Ingress_ingress"],
+#hero [class*="description"],
+#hero p {
+  font-size: 18px !important;
+  line-height: 1.6 !important;
+  color: rgba(255, 255, 255, 0.85) !important;
+  max-width: 600px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Search bar container */
+#hero [class*="SearchCTA_gridContainer"] {
+  max-width: 550px !important;
+  margin: 0 auto !important;
+}
+
+/* Search input field */
+#hero input[type="text"],
+#hero input[type="search"],
+#hero [class*="SearchCTA"] input {
+  border-radius: 8px 0 0 8px !important;
+  border: none !important;
+  padding: 16px 20px !important;
+  font-size: 15px !important;
+}
+
+/* Search button — gold */
+#hero button[type="submit"],
+#hero [class*="Button_primaryButtonRoot"] {
+  background: var(--tcl-gold) !important;
+  color: var(--tcl-burgundy-deep) !important;
+  border: none !important;
+  border-radius: 0 8px 8px 0 !important;
+  padding: 16px 24px !important;
+  font-size: 15px !important;
+  font-weight: 700 !important;
+}
+
+#hero button[type="submit"]:hover,
+#hero [class*="Button_primaryButtonRoot"]:hover {
+  background: #d49730 !important;
+}
+
+/* ----- Hero Dual CTA Buttons ----- */
+
+/* Wrapper for both CTA buttons (injected via JS) */
+.tcl-hero-cta-wrapper {
+  display: flex !important;
+  gap: 16px !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin-top: 24px !important;
+  flex-wrap: wrap !important;
+}
+
+/* Shared button sizing for both CTAs */
+#hero a[class*="ctaButton"],
+#hero [class*="callToAction"] a,
+.tcl-hero-secondary-cta {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 8px !important;
+  padding: 16px 40px !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+  transition: all 0.2s ease !important;
+  cursor: pointer !important;
+  width: 230px !important;
+  height: 56px !important;
+  box-sizing: border-box !important;
+  line-height: 1 !important;
+  margin: 0 !important;
+  vertical-align: middle !important;
+}
+
+/* Primary CTA — "Browse Costumes" (Sharetribe's native CTA link) */
+#hero a[class*="ctaButton"],
+#hero [class*="callToAction"] a {
+  background: var(--tcl-gold) !important;
+  color: var(--tcl-burgundy-deep) !important;
+  border: 2px solid var(--tcl-gold) !important;
+}
+
+#hero a[class*="ctaButton"]:hover,
+#hero [class*="callToAction"] a:hover {
+  background: #d49730 !important;
+  border-color: #d49730 !important;
+}
+
+/* Secondary CTA — "Sell a Costume" (injected via JS) */
+.tcl-hero-secondary-cta {
+  background: transparent !important;
+  color: white !important;
+  border: 2px solid rgba(255, 255, 255, 0.6) !important;
+}
+
+.tcl-hero-secondary-cta:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border-color: white !important;
+  color: white !important;
+}
+
+
+/* ==========================================================
+   1. VALUE BAR — Cream background, 3 centered columns
+   ========================================================== */
+
+#value-bar {
+  background: var(--tcl-cream) !important;
+  border-bottom: 1px solid var(--tcl-cream-dark);
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+#value-bar > [class*="sectionContent"] {
+  max-width: 100% !important;
+  padding: 0 !important;
+}
+
+#value-bar [class*="threeColumns"] {
+  gap: 0 !important;
+}
+
+#value-bar [class*="BlockContainer_root"] {
+  padding: 24px 30px !important;
+  text-align: center !important;
+  border-right: 1px solid var(--tcl-cream-dark);
+}
+
+#value-bar [class*="BlockContainer_root"]:last-child {
+  border-right: none;
+}
+
+#value-bar [class*="BlockDefault_text"] {
+  align-items: center !important;
+  text-align: center !important;
+}
+
+#value-bar h3 {
+  font-family: 'Outfit', sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  color: var(--tcl-burgundy-deep) !important;
+  margin-bottom: 4px !important;
+}
+
+#value-bar p {
+  font-size: 14px !important;
+  color: var(--tcl-text-light) !important;
+  line-height: 1.5 !important;
+}
+
+
+/* ==========================================================
+   2. HOW IT WORKS — Warm white background, numbered cards
+   ========================================================== */
+
+#how-it-works-steps {
+  background: var(--tcl-warm-white) !important;
+  padding: 32px 0 !important;
+}
+
+/* Section title — Playfair Display */
+#how-it-works-steps h2 {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 34px !important;
+  color: var(--tcl-burgundy-deep) !important;
+  text-align: center !important;
+  margin-bottom: 8px !important;
+}
+
+/* Section description */
+#how-it-works-steps [class*="Ingress_ingress"] {
+  font-size: 16px !important;
+  color: var(--tcl-text-light) !important;
+  text-align: center !important;
+  margin-bottom: 16px !important;
+}
+
+/* Step cards */
+#how-it-works-steps [class*="BlockContainer_root"] {
+  background: white !important;
+  border-radius: 12px !important;
+  border: 1px solid #f0ebe6 !important;
+  padding: 28px 20px !important;
+  text-align: center !important;
+  position: relative !important;
+  overflow: visible !important;
+}
+
+/* Numbered circle using CSS counter */
+#how-it-works-steps [class*="fourColumns"] {
+  counter-reset: step-counter;
+}
+
+#how-it-works-steps [class*="BlockContainer_root"]::before {
+  counter-increment: step-counter;
+  content: counter(step-counter);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--tcl-burgundy);
+  color: white;
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 auto 12px auto;
+}
+
+#how-it-works-steps [class*="BlockDefault_text"] {
+  align-items: center !important;
+  text-align: center !important;
+}
+
+#how-it-works-steps h3 {
+  font-family: 'Outfit', sans-serif !important;
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  color: var(--tcl-burgundy-deep) !important;
+  margin-bottom: 6px !important;
+}
+
+#how-it-works-steps p:not([class*="Ingress"]) {
+  font-size: 14px !important;
+  color: var(--tcl-text-light) !important;
+  line-height: 1.6 !important;
+}
+
+
+/* ==========================================================
+   3. BROWSE BY GENRE — Category cards with cream background
+   ========================================================== */
+
+#browse-by-genre {
+  padding: 32px 0 !important;
+}
+
+#browse-by-genre h2 {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 34px !important;
+  color: var(--tcl-burgundy-deep) !important;
+  text-align: center !important;
+  margin-bottom: 8px !important;
+}
+
+#browse-by-genre [class*="Ingress_ingress"] {
+  font-size: 16px !important;
+  color: var(--tcl-text-light) !important;
+  text-align: center !important;
+  margin-bottom: 16px !important;
+}
+
+/* Genre cards */
+#browse-by-genre [class*="BlockContainer_root"] {
+  background: var(--tcl-cream) !important;
+  border-radius: 12px !important;
+  border: 1px solid var(--tcl-cream-dark) !important;
+  padding: 28px 20px !important;
+  text-align: center !important;
+  transition: all 0.2s ease !important;
+}
+
+#browse-by-genre [class*="BlockContainer_root"]:hover {
+  border-color: var(--tcl-burgundy) !important;
+  background: white !important;
+}
+
+#browse-by-genre [class*="BlockDefault_text"] {
+  align-items: center !important;
+  text-align: center !important;
+}
+
+#browse-by-genre h3 {
+  font-family: 'Outfit', sans-serif !important;
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  color: var(--tcl-burgundy-deep) !important;
+}
+
+#browse-by-genre p:not([class*="Ingress"]) {
+  font-size: 14px !important;
+  color: var(--tcl-text-light) !important;
+  margin-top: 4px !important;
+  line-height: 1.5 !important;
+}
+
+/* Carousel arrows styling */
+#browse-by-genre [class*="carouselArrow"] {
+  background: var(--tcl-burgundy) !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 50% !important;
+}
+
+#browse-by-genre [class*="carouselArrow"]:hover {
+  background: var(--tcl-burgundy-deep) !important;
+}
+
+
+/* ==========================================================
+   4. CTA BANNER — Burgundy gradient background
+   ========================================================== */
+
+#cta-banner {
+  background: linear-gradient(135deg, var(--tcl-burgundy-deep) 0%, var(--tcl-burgundy) 100%) !important;
+  padding: 48px 0 !important;
+}
+
+/* Override Sharetribe's custom appearance background overlay */
+#cta-banner [class*="CustomAppearance_backgroundImageWrapper"] {
+  background: transparent !important;
+}
+
+#cta-banner > [class*="sectionContent"] {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
+
+#cta-banner h2 {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 30px !important;
+  color: white !important;
+}
+
+#cta-banner [class*="Ingress_ingress"],
+#cta-banner [class*="description"] {
+  font-size: 16px !important;
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+/* CTA button styling */
+#cta-banner a[class*="ctaButton"],
+#cta-banner [class*="callToAction"] a,
+#cta-banner a[class*="Button"] {
+  background: var(--tcl-gold) !important;
+  color: var(--tcl-burgundy-deep) !important;
+  border: none !important;
+  border-radius: 8px !important;
+  padding: 14px 28px !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+  transition: all 0.2s ease !important;
+}
+
+#cta-banner a[class*="ctaButton"]:hover,
+#cta-banner [class*="callToAction"] a:hover,
+#cta-banner a[class*="Button"]:hover {
+  background: #d49730 !important;
+}
+
+
+/* ==========================================================
+   5. SOCIAL PROOF — Trust signals section
+   ========================================================== */
+
+#social-proof {
+  background: var(--tcl-warm-white) !important;
+  padding: 48px 0 !important;
+}
+
+#social-proof h2 {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 34px !important;
+  color: var(--tcl-burgundy-deep) !important;
+  text-align: center !important;
+  margin-bottom: 8px !important;
+}
+
+#social-proof [class*="Ingress_ingress"] {
+  font-size: 16px !important;
+  color: var(--tcl-text-light) !important;
+  text-align: center !important;
+  margin-bottom: 24px !important;
+}
+
+#social-proof [class*="BlockContainer_root"] {
+  background: white !important;
+  border-radius: 12px !important;
+  border: 1px solid #f0ebe6 !important;
+  padding: 28px 20px !important;
+  text-align: center !important;
+}
+
+#social-proof h3 {
+  font-family: 'Outfit', sans-serif !important;
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  color: var(--tcl-burgundy-deep) !important;
+  margin-bottom: 6px !important;
+}
+
+#social-proof p:not([class*="Ingress"]) {
+  font-size: 14px !important;
+  color: var(--tcl-text-light) !important;
+  line-height: 1.6 !important;
+}
+
+#social-proof [class*="BlockDefault_text"] {
+  align-items: center !important;
+  text-align: center !important;
+}
+
+
+/* ==========================================================
+   6. FOR STUDIOS — White background, gold top border, feature cards
+   ========================================================== */
+
+#for-studios {
+  background: white !important;
+  padding: 48px 0 !important;
+  border-top: 3px solid var(--tcl-gold) !important;
+}
+
+#for-studios h2 {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 34px !important;
+  color: var(--tcl-burgundy-deep) !important;
+  text-align: center !important;
+  margin-bottom: 8px !important;
+}
+
+#for-studios [class*="Ingress_ingress"] {
+  font-size: 16px !important;
+  color: var(--tcl-text-light) !important;
+  text-align: center !important;
+  margin-bottom: 16px !important;
+}
+
+/* Studio feature cards */
+#for-studios [class*="BlockContainer_root"] {
+  background: var(--tcl-warm-white) !important;
+  border-radius: 12px !important;
+  border: 1px solid #f0ebe6 !important;
+  padding: 32px 24px !important;
+  text-align: center !important;
+  transition: all 0.2s ease !important;
+}
+
+#for-studios [class*="BlockContainer_root"]:hover {
+  box-shadow: 0 4px 20px rgba(74, 14, 46, 0.08) !important;
+  transform: translateY(-2px) !important;
+}
+
+#for-studios [class*="BlockDefault_text"] {
+  align-items: center !important;
+  text-align: center !important;
+}
+
+#for-studios h3 {
+  font-family: 'Outfit', sans-serif !important;
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  color: var(--tcl-burgundy-deep) !important;
+  margin-bottom: 8px !important;
+}
+
+#for-studios p:not([class*="Ingress"]) {
+  font-size: 14px !important;
+  color: var(--tcl-text-light) !important;
+  line-height: 1.6 !important;
+}
+
+/* CTA button in for-studios section */
+#for-studios a[class*="ctaButton"],
+#for-studios [class*="callToAction"] a,
+#for-studios a[class*="Button"] {
+  background: var(--tcl-burgundy) !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 8px !important;
+  padding: 14px 28px !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+  transition: all 0.2s ease !important;
+}
+
+#for-studios a[class*="ctaButton"]:hover,
+#for-studios [class*="callToAction"] a:hover,
+#for-studios a[class*="Button"]:hover {
+  background: var(--tcl-burgundy-deep) !important;
+}
+
+
+/* ==========================================================
+   7. GLOBAL LANDING PAGE ENHANCEMENTS
+   ========================================================== */
+
+/* Section titles across all custom sections */
+#value-bar [class*="sectionDetails"],
+#how-it-works-steps [class*="sectionDetails"],
+#browse-by-genre [class*="sectionDetails"],
+#for-studios [class*="sectionDetails"],
+#social-proof [class*="sectionDetails"],
+#cta-banner [class*="sectionDetails"] {
+  text-align: center !important;
+}
+
+/* Tighten default section spacing from Sharetribe */
+#value-bar [class*="sectionDetails"],
+#how-it-works-steps [class*="sectionDetails"],
+#browse-by-genre [class*="sectionDetails"],
+#for-studios [class*="sectionDetails"],
+#social-proof [class*="sectionDetails"] {
+  margin-bottom: 16px !important;
+}
+
+/* Smooth section transitions */
+#value-bar,
+#how-it-works-steps,
+#browse-by-genre,
+#for-studios,
+#social-proof,
+#cta-banner {
+  transition: opacity 0.3s ease;
+}

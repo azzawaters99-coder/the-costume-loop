@@ -28,6 +28,10 @@ import Routes from './routing/Routes';
 // Sharetribe Web Template uses English translations as default translations.
 import defaultMessages from './translations/en.json';
 
+// The Costume Loop — Custom styles and hero CTA injection
+import './styles/costumeLoopCustom.css';
+import './scripts/costumeLoopHeroCta.js';
+
 // If you want to change the language of default (fallback) translations,
 // change the imports to match the wanted locale:
 //
