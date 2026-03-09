@@ -27,6 +27,9 @@
 (function () {
   'use strict';
 
+    // Guard: only run in browser (not during server-side rendering)
+    if (typeof window === 'undefined' || typeof document === 'undefined') return;
+
   function injectSecondCTA() {
     // Find the hero section by anchor ID
     var hero = document.getElementById('hero');
