@@ -600,244 +600,243 @@
 
 /* --- 8a. For Studios Hero â Burgundy gradient --- */
 #fs-hero {
-    background: linear-gradient(135deg, var(--tcl-burgundy-deep) 0%, var(--tcl-burgundy) 60%, var(--tcl-burgundy-light) 100%) !important;
-    padding: 80px 0 !important;
-    position: relative !important;
-    overflow: hidden !important;
+  background: linear-gradient(135deg, var(--tcl-burgundy-deep) 0%, var(--tcl-burgundy) 60%, var(--tcl-burgundy-light) 100%) !important;
+  padding: 60px 0 !important;
+  position: relative !important;
+  overflow: hidden !important;
 }
 
 /* Override Sharetribe background wrapper */
 #fs-hero [class*="CustomAppearance_backgroundImageWrapper"] {
-    background: transparent !important;
+  background: transparent !important;
 }
 
 /* Decorative circle */
 #fs-hero::after {
-    content: '';
-    position: absolute;
-    right: -40px;
-    top: -40px;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.04);
-    pointer-events: none;
+  content: '';
+  position: absolute;
+  right: -40px;
+  top: -40px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.04);
+  pointer-events: none;
 }
 
 #fs-hero h1 {
-    font-family: 'Playfair Display', serif !important;
-    font-size: 44px !important;
-    font-weight: 700 !important;
-    color: white !important;
-    margin-bottom: 16px !important;
+  font-family: 'Playfair Display', serif !important;
+  font-size: 44px !important;
+  font-weight: 700 !important;
+  color: white !important;
+  margin-bottom: 16px !important;
 }
 
 #fs-hero [class*="Ingress_ingress"],
 #fs-hero [class*="description"],
 #fs-hero p {
-    font-size: 18px !important;
-    line-height: 1.6 !important;
-    color: rgba(255, 255, 255, 0.9) !important;
-    max-width: 640px !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
+  font-size: 18px !important;
+  line-height: 1.6 !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+  max-width: 640px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 #fs-hero [class*="sectionDetails"] {
-    text-align: center !important;
+  text-align: center !important;
 }
 
 
 /* --- 8b. For Studios Benefits Row 1 â Cream cards --- */
 #fs-benefits-1 {
-    background: #f9f7f5 !important;
-    padding: 60px 0 !important;
+  background: #f9f7f5 !important;
+  padding: 40px 0 !important;
 }
 
 #fs-benefits-1 [class*="sectionDetails"] {
-    display: none !important;
+  display: none !important;
 }
 
 #fs-benefits-1 [class*="BlockContainer_root"] {
-    background: white !important;
-    border-radius: 12px !important;
-    padding: 36px 28px !important;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06) !important;
-    text-align: center !important;
-    border: none !important;
-    transition: all 0.2s ease !important;
+  background: white !important;
+  border-radius: 12px !important;
+  padding: 36px 28px !important;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06) !important;
+  text-align: center !important;
+  border: none !important;
+  transition: all 0.2s ease !important;
 }
 
 #fs-benefits-1 [class*="BlockContainer_root"]:hover {
-    box-shadow: 0 4px 20px rgba(74, 14, 46, 0.1) !important;
-    transform: translateY(-2px) !important;
+  box-shadow: 0 4px 20px rgba(74, 14, 46, 0.1) !important;
+  transform: translateY(-2px) !important;
 }
 
 #fs-benefits-1 [class*="BlockDefault_text"] {
-    align-items: center !important;
-    text-align: center !important;
+  align-items: center !important;
+  text-align: center !important;
 }
 
-/* Emoji icons via CSS ::before using block titles */
+/* Emoji icons via CSS ::before â using unicode escapes to avoid encoding issues */
 #fs-benefits-1 [class*="BlockContainer_root"]:nth-child(1) [class*="BlockDefault_text"]::before {
-    content: 'ðª';
-    display: block;
-    font-size: 36px;
-    margin-bottom: 12px;
+  content: '\1F3EA';
+  display: block;
+  font-size: 36px;
+  margin-bottom: 8px;
 }
 
 #fs-benefits-1 [class*="BlockContainer_root"]:nth-child(2) [class*="BlockDefault_text"]::before {
-    content: 'ð°';
-    display: block;
-    font-size: 36px;
-    margin-bottom: 12px;
+  content: '\1F4B0';
+  display: block;
+  font-size: 36px;
+  margin-bottom: 8px;
 }
 
 #fs-benefits-1 [class*="BlockContainer_root"]:nth-child(3) [class*="BlockDefault_text"]::before {
-    content: 'ð¤';
-    display: block;
-    font-size: 36px;
-    margin-bottom: 12px;
+  content: '\1F91D';
+  display: block;
+  font-size: 36px;
+  margin-bottom: 8px;
 }
 
 #fs-benefits-1 h3 {
-    font-family: 'Outfit', sans-serif !important;
-    font-size: 20px !important;
-    font-weight: 700 !important;
-    color: var(--tcl-burgundy-deep) !important;
-    margin-bottom: 12px !important;
+  font-family: 'Outfit', sans-serif !important;
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  color: var(--tcl-burgundy-deep) !important;
+  margin-bottom: 12px !important;
 }
 
 #fs-benefits-1 p:not([class*="Ingress"]) {
-    font-size: 15px !important;
-    color: #555 !important;
-    line-height: 1.6 !important;
+  font-size: 15px !important;
+  color: #555 !important;
+  line-height: 1.6 !important;
 }
 
 
 /* --- 8c. For Studios Benefits Row 2 â Cream cards --- */
 #fs-benefits-2 {
-    background: #f9f7f5 !important;
-    padding: 20px 0 60px !important;
-    border-top: 1px dashed #ddd !important;
+  background: #f9f7f5 !important;
+  padding: 10px 0 40px !important;
+  border-top: none !important;
 }
 
 #fs-benefits-2 [class*="sectionDetails"] {
-    display: none !important;
+  display: none !important;
 }
 
 #fs-benefits-2 [class*="BlockContainer_root"] {
-    background: white !important;
-    border-radius: 12px !important;
-    padding: 36px 28px !important;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06) !important;
-    text-align: center !important;
-    border: none !important;
-    transition: all 0.2s ease !important;
+  background: white !important;
+  border-radius: 12px !important;
+  padding: 36px 28px !important;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06) !important;
+  text-align: center !important;
+  border: none !important;
+  transition: all 0.2s ease !important;
 }
 
 #fs-benefits-2 [class*="BlockContainer_root"]:hover {
-    box-shadow: 0 4px 20px rgba(74, 14, 46, 0.1) !important;
-    transform: translateY(-2px) !important;
+  box-shadow: 0 4px 20px rgba(74, 14, 46, 0.1) !important;
+  transform: translateY(-2px) !important;
 }
 
 #fs-benefits-2 [class*="BlockDefault_text"] {
-    align-items: center !important;
-    text-align: center !important;
+  align-items: center !important;
+  text-align: center !important;
 }
 
-/* Emoji icons for Row 2 */
+/* Emoji icons for Row 2 â unicode escapes */
 #fs-benefits-2 [class*="BlockContainer_root"]:nth-child(1) [class*="BlockDefault_text"]::before {
-    content: 'ð¿';
-    display: block;
-    font-size: 36px;
-    margin-bottom: 12px;
+  content: '\1F33F';
+  display: block;
+  font-size: 36px;
+  margin-bottom: 8px;
 }
 
 #fs-benefits-2 [class*="BlockContainer_root"]:nth-child(2) [class*="BlockDefault_text"]::before {
-    content: 'â';
-    display: block;
-    font-size: 36px;
-    margin-bottom: 12px;
+  content: '\2705';
+  display: block;
+  font-size: 36px;
+  margin-bottom: 8px;
 }
 
 #fs-benefits-2 [class*="BlockContainer_root"]:nth-child(3) [class*="BlockDefault_text"]::before {
-    content: 'ð£';
-    display: block;
-    font-size: 36px;
-    margin-bottom: 12px;
+  content: '\1F4E3';
+  display: block;
+  font-size: 36px;
+  margin-bottom: 8px;
 }
 
 #fs-benefits-2 h3 {
-    font-family: 'Outfit', sans-serif !important;
-    font-size: 20px !important;
-    font-weight: 700 !important;
-    color: var(--tcl-burgundy-deep) !important;
-    margin-bottom: 12px !important;
+  font-family: 'Outfit', sans-serif !important;
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  color: var(--tcl-burgundy-deep) !important;
+  margin-bottom: 12px !important;
 }
 
 #fs-benefits-2 p:not([class*="Ingress"]) {
-    font-size: 15px !important;
-    color: #555 !important;
-    line-height: 1.6 !important;
+  font-size: 15px !important;
+  color: #555 !important;
+  line-height: 1.6 !important;
 }
 
 
 /* --- 8d. For Studios CTA Banner â Burgundy gradient --- */
 #fs-cta {
-    background: linear-gradient(135deg, var(--tcl-burgundy-deep) 0%, var(--tcl-burgundy) 100%) !important;
-    padding: 80px 0 !important;
+  background: linear-gradient(135deg, var(--tcl-burgundy-deep) 0%, var(--tcl-burgundy) 100%) !important;
+  padding: 60px 0 !important;
 }
 
 /* Override Sharetribe background wrapper */
 #fs-cta [class*="CustomAppearance_backgroundImageWrapper"] {
-    background: transparent !important;
+  background: transparent !important;
 }
 
 #fs-cta [class*="sectionDetails"] {
-    text-align: center !important;
+  text-align: center !important;
 }
 
 #fs-cta h2 {
-    font-family: 'Playfair Display', serif !important;
-    font-size: 32px !important;
-    font-weight: 700 !important;
-    color: white !important;
-    margin-bottom: 16px !important;
+  font-family: 'Playfair Display', serif !important;
+  font-size: 32px !important;
+  font-weight: 700 !important;
+  color: white !important;
+  margin-bottom: 16px !important;
 }
 
 #fs-cta [class*="Ingress_ingress"],
 #fs-cta [class*="description"],
 #fs-cta p {
-    font-size: 17px !important;
-    color: rgba(255, 255, 255, 0.85) !important;
-    max-width: 560px !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    line-height: 1.6 !important;
+  font-size: 17px !important;
+  color: rgba(255, 255, 255, 0.85) !important;
+  max-width: 560px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  line-height: 1.6 !important;
 }
 
 /* CTA button â gold accent */
 #fs-cta a[class*="ctaButton"],
 #fs-cta [class*="callToAction"] a,
 #fs-cta a[class*="Button"] {
-    background: var(--tcl-gold) !important;
-    color: var(--tcl-burgundy-deep) !important;
-    border: none !important;
-    border-radius: 8px !important;
-    padding: 14px 36px !important;
-    font-size: 16px !important;
-    font-weight: 600 !important;
-    text-decoration: none !important;
-    transition: all 0.2s ease !important;
+  background: var(--tcl-gold) !important;
+  color: var(--tcl-burgundy-deep) !important;
+  border: none !important;
+  border-radius: 8px !important;
+  padding: 14px 36px !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+  transition: all 0.2s ease !important;
 }
 
 #fs-cta a[class*="ctaButton"]:hover,
 #fs-cta [class*="callToAction"] a:hover,
 #fs-cta a[class*="Button"]:hover {
-    background: #d49730 !important;
+  background: #d49730 !important;
 }
-
 
 
 /* ===========================================================
@@ -845,7 +844,7 @@
    Sections: #about-hero (Our Story), #about-cards (Pillars)
    =========================================================== */
 
-/* ── About Hero — "Our Story" ── */
+/* ââ About Hero â "Our Story" ââ */
 #about-hero {
   background: linear-gradient(135deg, var(--tcl-burgundy-deep) 0%, var(--tcl-burgundy) 60%, var(--tcl-burgundy-light) 100%) !important;
   padding: 80px 40px !important;
@@ -887,7 +886,7 @@
   margin-right: auto !important;
 }
 
-/* ── About Hero — Block/Article content area ── */
+/* ââ About Hero â Block/Article content area ââ */
 #about-hero [class*="Block_root"],
 #about-hero [class*="BlockContainer"],
 #about-hero article {
@@ -916,7 +915,7 @@
   text-align: left !important;
 }
 
-/* ── About Cards — Four Pillars ── */
+/* ââ About Cards â Four Pillars ââ */
 #about-cards {
   padding: 70px 40px !important;
   background: var(--tcl-warm-white) !important;
@@ -967,7 +966,7 @@
   line-height: 1.6 !important;
 }
 
-/* ── About page responsive ── */
+/* ââ About page responsive ââ */
 @media (max-width: 768px) {
   #about-hero h1,
   #about-hero h2,
