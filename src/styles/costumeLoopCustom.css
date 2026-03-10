@@ -601,7 +601,7 @@
 /* --- 8a. For Studios Hero â Burgundy gradient --- */
 #fs-hero {
   background: linear-gradient(135deg, var(--tcl-burgundy-deep) 0%, var(--tcl-burgundy) 60%, var(--tcl-burgundy-light) 100%) !important;
-  padding: 60px 0 !important;
+  padding: 40px 0 !important;
   position: relative !important;
   overflow: hidden !important;
 }
@@ -617,8 +617,8 @@
   position: absolute;
   right: -40px;
   top: -40px;
-  width: 300px;
-  height: 300px;
+  width: 210px;
+  height: 210px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.04);
   pointer-events: none;
@@ -626,17 +626,17 @@
 
 #fs-hero h1 {
   font-family: 'Playfair Display', serif !important;
-  font-size: 44px !important;
+  font-size: 38px !important;
   font-weight: 700 !important;
   color: white !important;
-  margin-bottom: 16px !important;
+  margin-bottom: 12px !important;
 }
 
 #fs-hero [class*="Ingress_ingress"],
 #fs-hero [class*="description"],
 #fs-hero p {
-  font-size: 18px !important;
-  line-height: 1.6 !important;
+  font-size: 16px !important;
+  line-height: 1.5 !important;
   color: rgba(255, 255, 255, 0.9) !important;
   max-width: 640px !important;
   margin-left: auto !important;
@@ -651,7 +651,7 @@
 /* --- 8b. For Studios Benefits Row 1 â Cream cards --- */
 #fs-benefits-1 {
   background: #f9f7f5 !important;
-  padding: 40px 0 !important;
+  padding: 24px 0 8px !important;
 }
 
 #fs-benefits-1 [class*="sectionDetails"] {
@@ -718,7 +718,7 @@
 /* --- 8c. For Studios Benefits Row 2 â Cream cards --- */
 #fs-benefits-2 {
   background: #f9f7f5 !important;
-  padding: 10px 0 40px !important;
+  padding: 0 0 24px !important;
   border-top: none !important;
 }
 
@@ -786,7 +786,7 @@
 /* --- 8d. For Studios CTA Banner â Burgundy gradient --- */
 #fs-cta {
   background: linear-gradient(135deg, var(--tcl-burgundy-deep) 0%, var(--tcl-burgundy) 100%) !important;
-  padding: 60px 0 !important;
+  padding: 40px 0 !important;
 }
 
 /* Override Sharetribe background wrapper */
