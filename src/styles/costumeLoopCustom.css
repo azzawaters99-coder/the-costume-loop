@@ -1,5 +1,5 @@
 /* ============================================================
-   THE COSTUME LOOP â Custom Landing Page Styles
+   THE COSTUME LOOP Ã¢ÂÂ Custom Landing Page Styles
    For Sharetribe Web Template
 
    Add this CSS to your web-template's global styles, e.g.:
@@ -26,13 +26,13 @@
 
 
 /* ==========================================================
-   0. HERO â Burgundy gradient, Playfair heading, gold search
+   0. HERO Ã¢ÂÂ Burgundy gradient, Playfair heading, gold search
    ========================================================== */
 
 /* Burgundy gradient background */
 #hero {
   background: linear-gradient(135deg, var(--tcl-burgundy-deep) 0%, var(--tcl-burgundy) 60%, var(--tcl-burgundy-light) 100%) !important;
-  padding: 70px 0 !important;
+  padding: 48px 0 !important;
   position: relative !important;
   overflow: hidden !important;
 }
@@ -55,7 +55,7 @@
   pointer-events: none;
 }
 
-/* Hero title â Playfair Display serif */
+/* Hero title Ã¢ÂÂ Playfair Display serif */
 #hero h1 {
   font-family: 'Playfair Display', serif !important;
   font-size: 48px !important;
@@ -77,6 +77,26 @@
   margin-right: auto !important;
 }
 
+/* Hero section content centering */
+#hero [class*="sectionDetails"] {
+  text-align: center !important;
+  justify-items: center !important;
+}
+
+/* Center CTA button on mobile */
+@media (max-width: 768px) {
+  #hero [class*="sectionDetails"] {
+    padding: 0 24px !important;
+  }
+  #hero a[class*="ctaButton"],
+  #hero [class*="callToAction"] a {
+    margin: 0 auto !important;
+  }
+  #hero h1 {
+    font-size: 36px !important;
+  }
+}
+
 /* Search bar container */
 #hero [class*="SearchCTA_gridContainer"] {
   max-width: 550px !important;
@@ -93,7 +113,7 @@
   font-size: 15px !important;
 }
 
-/* Search button â gold */
+/* Search button Ã¢ÂÂ gold */
 #hero button[type="submit"],
 #hero [class*="Button_primaryButtonRoot"] {
   background: var(--tcl-gold) !important;
@@ -144,7 +164,7 @@
   vertical-align: middle !important;
 }
 
-/* Primary CTA â "Browse Costumes" (Sharetribe's native CTA link) */
+/* Primary CTA Ã¢ÂÂ "Browse Costumes" (Sharetribe's native CTA link) */
 #hero a[class*="ctaButton"],
 #hero [class*="callToAction"] a {
   background: var(--tcl-gold) !important;
@@ -158,7 +178,7 @@
   border-color: #d49730 !important;
 }
 
-/* Secondary CTA â "Sell a Costume" (injected via JS) */
+/* Secondary CTA Ã¢ÂÂ "Sell a Costume" (injected via JS) */
 .tcl-hero-secondary-cta {
   background: transparent !important;
   color: white !important;
@@ -173,7 +193,7 @@
 
 
 /* ==========================================================
-   1. VALUE BAR â Cream background, 3 centered columns
+   1. VALUE BAR Ã¢ÂÂ Cream background, 3 centered columns
    ========================================================== */
 
 #value-bar {
@@ -223,7 +243,7 @@
 
 
 /* ==========================================================
-   2. HOW IT WORKS â Warm white background, numbered cards
+   2. HOW IT WORKS Ã¢ÂÂ Warm white background, numbered cards
    ========================================================== */
 
 #how-it-works-steps {
@@ -231,7 +251,7 @@
   padding: 32px 0 !important;
 }
 
-/* Section title â Playfair Display */
+/* Section title Ã¢ÂÂ Playfair Display */
 #how-it-works-steps h2 {
   font-family: 'Playfair Display', serif !important;
   font-size: 34px !important;
@@ -302,7 +322,7 @@
 
 
 /* ==========================================================
-   3. BROWSE BY GENRE â Category cards with cream background
+   3. BROWSE BY GENRE Ã¢ÂÂ Category cards with cream background
    ========================================================== */
 
 #browse-by-genre {
@@ -372,7 +392,7 @@
 
 
 /* ==========================================================
-   4. CTA BANNER â Burgundy gradient background
+   4. CTA BANNER Ã¢ÂÂ Burgundy gradient background
    ========================================================== */
 
 #cta-banner {
@@ -427,7 +447,7 @@
 
 
 /* ==========================================================
-   5. SOCIAL PROOF â Trust signals section
+   5. SOCIAL PROOF Ã¢ÂÂ Trust signals section
    ========================================================== */
 
 #social-proof {
@@ -479,7 +499,7 @@
 
 
 /* ==========================================================
-   6. FOR STUDIOS â White background, gold top border, feature cards
+   6. FOR STUDIOS Ã¢ÂÂ White background, gold top border, feature cards
    ========================================================== */
 
 #for-studios {
@@ -594,11 +614,11 @@
 
 
 /* ==========================================================
-   8. FOR STUDIOS PAGE â /p/for-studios
+   8. FOR STUDIOS PAGE Ã¢ÂÂ /p/for-studios
    Sections: fs-hero, fs-benefits-1, fs-benefits-2, fs-cta
    ========================================================== */
 
-/* --- 8a. For Studios Hero â Burgundy gradient --- */
+/* --- 8a. For Studios Hero Ã¢ÂÂ Burgundy gradient --- */
 #fs-hero {
   background: linear-gradient(135deg, var(--tcl-burgundy-deep) 0%, var(--tcl-burgundy) 60%, var(--tcl-burgundy-light) 100%) !important;
   padding: 40px 0 !important;
@@ -648,7 +668,7 @@
 }
 
 
-/* --- 8b. For Studios Benefits Row 1 â Cream cards --- */
+/* --- 8b. For Studios Benefits Row 1 Ã¢ÂÂ Cream cards --- */
 #fs-benefits-1 {
   background: #f9f7f5 !important;
   padding: 24px 0 8px !important;
@@ -678,7 +698,7 @@
   text-align: center !important;
 }
 
-/* Emoji icons via CSS ::before â using unicode escapes to avoid encoding issues */
+/* Emoji icons via CSS ::before Ã¢ÂÂ using unicode escapes to avoid encoding issues */
 #fs-benefits-1 [class*="BlockContainer_root"]:nth-child(1) [class*="BlockDefault_text"]::before {
   content: '\1F3EA';
   display: block;
@@ -715,7 +735,7 @@
 }
 
 
-/* --- 8c. For Studios Benefits Row 2 â Cream cards --- */
+/* --- 8c. For Studios Benefits Row 2 Ã¢ÂÂ Cream cards --- */
 #fs-benefits-2 {
   background: #f9f7f5 !important;
   padding: 0 0 24px !important;
@@ -746,7 +766,7 @@
   text-align: center !important;
 }
 
-/* Emoji icons for Row 2 â unicode escapes */
+/* Emoji icons for Row 2 Ã¢ÂÂ unicode escapes */
 #fs-benefits-2 [class*="BlockContainer_root"]:nth-child(1) [class*="BlockDefault_text"]::before {
   content: '\1F33F';
   display: block;
@@ -783,7 +803,7 @@
 }
 
 
-/* --- 8d. For Studios CTA Banner â Burgundy gradient --- */
+/* --- 8d. For Studios CTA Banner Ã¢ÂÂ Burgundy gradient --- */
 #fs-cta {
   background: linear-gradient(135deg, var(--tcl-burgundy-deep) 0%, var(--tcl-burgundy) 100%) !important;
   padding: 40px 0 !important;
@@ -817,7 +837,7 @@
   line-height: 1.6 !important;
 }
 
-/* CTA button â gold accent */
+/* CTA button Ã¢ÂÂ gold accent */
 #fs-cta a[class*="ctaButton"],
 #fs-cta [class*="callToAction"] a,
 #fs-cta a[class*="Button"] {
@@ -844,7 +864,7 @@
    Sections: #about-hero (Our Story), #about-cards (Pillars)
    =========================================================== */
 
-/* ââ About Hero â "Our Story" ââ */
+/* Ã¢ÂÂÃ¢ÂÂ About Hero Ã¢ÂÂ "Our Story" Ã¢ÂÂÃ¢ÂÂ */
 #about-hero {
   background: linear-gradient(135deg, var(--tcl-burgundy-deep) 0%, var(--tcl-burgundy) 60%, var(--tcl-burgundy-light) 100%) !important;
   padding: 80px 40px !important;
@@ -886,7 +906,7 @@
   margin-right: auto !important;
 }
 
-/* ââ About Hero â Block/Article content area ââ */
+/* Ã¢ÂÂÃ¢ÂÂ About Hero Ã¢ÂÂ Block/Article content area Ã¢ÂÂÃ¢ÂÂ */
 #about-hero [class*="Block_root"],
 #about-hero [class*="BlockContainer"],
 #about-hero article {
@@ -915,7 +935,7 @@
   text-align: left !important;
 }
 
-/* ââ About Cards â Four Pillars ââ */
+/* Ã¢ÂÂÃ¢ÂÂ About Cards Ã¢ÂÂ Four Pillars Ã¢ÂÂÃ¢ÂÂ */
 #about-cards {
   padding: 70px 40px !important;
   background: var(--tcl-warm-white) !important;
@@ -966,7 +986,7 @@
   line-height: 1.6 !important;
 }
 
-/* ââ About page responsive ââ */
+/* Ã¢ÂÂÃ¢ÂÂ About page responsive Ã¢ÂÂÃ¢ÂÂ */
 @media (max-width: 768px) {
   #about-hero h1,
   #about-hero h2,
